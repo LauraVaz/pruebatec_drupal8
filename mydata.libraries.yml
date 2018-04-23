@@ -1,0 +1,14 @@
+mydata-lib:
+  version: VERSION
+  css:
+    base:
+      css/bootstrap.min.css: {}
+    header: true
+  js:
+    js/jquery.min.js: {}
+    js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+#    - core/jquery.ui.datepicker
+

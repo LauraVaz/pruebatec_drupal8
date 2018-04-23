@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Contains the text of the mydata explanation page
+ */
+#}
+<div class="container py-sm-5">
+    <div class="mx-lg-30 mx-pr">
+    {% for val in value %}
+
+<div class="row">
+ <li><ul><b><h2 >{{ val.titulo|upper }}</h2></b></ul></li>
+<div class="col-sm-4 p-md-0 pt-2 ">
+    <div class="card restd-somb">
+        <img class="card-det-img-top" src="{{ val.url }}" alt="">
+    </div>
+</div>
+<div class="col-sm-8 pl-2 mt-3 mt-sm-0">
+    <div class="pl-4">
+
+        <div class="pb-0 btnIconsO pr-0 d-flex justify-content-md-start">
+                      <div >{{ val.descripcion|raw }}</div>
+        </div>
+
+        <div class="pb-0 btnIconsO pr-0 d-flex justify-content-md-start">
+        <a href="{{ val.link }}" >{{ val.link }}</a>
+
+        </div>
+     </div>
+ </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{#<script>#}
+{#//    $(function a() {#}
+{#//        $('#da-slider').cslider({#}
+{#//            autoplay	: true,#}
+{#//            bgincrement	: 450#}
+{#//        });#}
+{#//#}
+{#//    });#}
+{#</script>#}

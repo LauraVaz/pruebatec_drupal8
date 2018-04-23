@@ -1,0 +1,21 @@
+uuid: 8946da78-26da-46af-879b-2ddf9394b827
+langcode: en
+status: true
+dependencies:
+  module:
+    - mydata
+  theme:
+    - bartik
+id: mydatablock
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: mydata_block
+settings:
+  id: mydata_block
+  label: 'Mydata block'
+  provider: mydata
+  label_display: '0'
+visibility: {  }
+

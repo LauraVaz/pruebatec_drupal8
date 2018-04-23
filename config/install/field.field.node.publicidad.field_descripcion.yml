@@ -1,0 +1,21 @@
+uuid: 1322bee9-e196-433e-b6df-ae19557db03b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.publicidad
+  module:
+    - text
+id: node.publicidad.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: publicidad
+label: Descripción
+description: 'Descripción de la Publicidad'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,58 @@
+uuid: 253c5b73-47fe-451a-8899-6fb6ecce7310
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+#    - field.field.node.publicidad.body
+    - field.field.node.publicidad.field_descripcion
+    - field.field.node.publicidad.field_image
+    - field.field.node.publicidad.field_link
+    - node.type.publicidad
+  module:
+    - image
+    - link
+    - text
+    - user
+_core:
+  default_config_hash: ne0BNc8Zh032rCPZjJ-8DdWbkKdbXUE4wl3uFiR9LNc
+id: node.publicidad.teaser
+targetEntityType: node
+bundle: publicidad
+mode: teaser
+content:
+  field_descripcion:
+    type: text_default
+    weight: 4
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 3
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: { }
+#  body: true

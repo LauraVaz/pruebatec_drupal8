@@ -1,0 +1,6 @@
+mydata.admin:
+  title: 'Configuración Prueba Técnica Drupal 8 '
+  description: 'Configuración de la forma de mostrar los datos de las publicidades '
+  parent: system.admin_config_development
+  route_name: mydata.config
+  weight: 100

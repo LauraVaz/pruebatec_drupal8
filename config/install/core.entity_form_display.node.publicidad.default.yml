@@ -1,0 +1,94 @@
+uuid: 09537fcd-bbe1-4101-86bd-8f2feec42b05
+langcode: en
+status: true
+dependencies:
+  config:
+#    - field.field.node.publicidad.body
+    - field.field.node.publicidad.field_descripcion
+    - field.field.node.publicidad.field_image
+    - field.field.node.publicidad.field_link
+    - field.field.node.publicidad.field_titulo
+    - image.style.thumbnail
+    - node.type.publicidad
+  module:
+    - image
+    - link
+    - path
+    - text
+_core:
+  default_config_hash: QEK2UWGqxIp_AInpWpCUqsO452VkiWNIFFzharJOK7Q
+id: node.publicidad.default
+targetEntityType: node
+bundle: publicidad
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_descripcion:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_image:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_titulo:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    third_party_settings: {  }
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+    region: content
+  uid:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: { }
+#  body: true
+#  title: true

@@ -1,0 +1,23 @@
+uuid: 31f66fed-c3f8-469b-b0ff-94cc3c79d0cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.publicidad
+  module:
+    - link
+id: node.publicidad.field_link
+field_name: field_link
+entity_type: node
+bundle: publicidad
+label: Link
+description: 'Link de la publicidad'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 5490b65e-08aa-496f-a2d7-66978dafcb50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo
+    - node.type.publicidad
+id: node.publicidad.field_titulo
+field_name: field_titulo
+entity_type: node
+bundle: publicidad
+label: Título
+description: 'Título de la publicidad'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
